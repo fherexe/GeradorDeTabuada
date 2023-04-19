@@ -72,10 +72,20 @@ section {
 
 button {
     cursor: pointer;
+    background-color: var(--lightmode-color1);
+    box-shadow: 0 8px #cf4f00 ;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    filter: brightness(110%);
+    box-shadow: 0 6px #cf4f00;
+    transform: translateY(1px);
+  }
+
+button:active {
+    background-color: #cf4f00;
+    box-shadow: 0 5px #a33f00;
+    transform: translateY(4px);
 }
 
 table {
@@ -141,16 +151,20 @@ table {
     color: #fff;
   }
 
-  .dark-mode main {
-  }
-
-  .dark-mode main button {
+.dark-mode button {
     background-color: var(--darkmode-color2);
-  }
+    box-shadow: 0 8px #181b36;
+}
 
-  .dark-mode #footer a {
-    color: var(--darkmode-color2);
-  }
+
+.dark-mode button:active {
+    background-color: #181b36;
+    box-shadow: 0 5px #111325;
+}
+
+.dark-mode #footer a {
+  color: var(--darkmode-color2);
+}
 
 
 
