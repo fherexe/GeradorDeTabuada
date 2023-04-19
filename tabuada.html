@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="tabuada.css">
+    <title>Gerador de tabuada</title>
+</head>
+<body>
+    <script>
+        function gerarTabuada(){
+            var numero = parseInt(document.getElementById('numero').value);
+            var tabela = document.getElementById('tabela-tabuada');
+
+            tabela.innerHTML = "";
+            //gerar tabuada 
+
+            for (var i = 1; i <= 10; i++) {
+                var resultado = numero * i;
+                var linha = "<tr><td>"  + numero + " x " + i + "</td><td>" + "= " + resultado + "</td></tr>";
+            
+                tabela.innerHTML += linha 
+            }
+        }
+
+        const togglebtn = document.getElementsByClassName('slinder round');
+        const body = document.body
+
+        togglebtn.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+        });
+
+    </script>
+
+    <label class="switch" >
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+    
+
+    <main>
+        <h1>Tabuada Dinâmica</h1>
+        <p>Digite um valor</p>
+        <input type="text" id="numero">
+        <button onclick="gerarTabuada()">Gerar Tabuada</button>
+        <p id="footer">
+            &copy;2023 Instituto da Oportunidade Social 
+            <br> 
+            Site desenvolvido por <a href="https://fherexe.github.io/MyLinks/">Fher</a>, todos direitos reservados.
+        </p>
+    </main>
+
+    <section>
+        <table id="tabela-tabuada"></table>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

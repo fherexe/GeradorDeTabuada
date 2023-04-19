@@ -1,0 +1,154 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+    height: 98vh;
+    gap: 2%
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 40px;
+}
+
+main input {
+    padding: 4px;
+    text-align: center;
+    margin: 10px 0;
+    width: 100px;
+}
+
+main button {
+    border: silver;
+    padding: 11px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: #ffcf32;
+    color: #fff;
+}
+
+#footer {
+    padding-top: 10%;
+    font-size: 14px;
+    text-align: center;
+}
+
+#footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffcf32;
+}
+
+section {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+table {
+    padding: 10px 40px;
+}
+
+.switch { /**botão do switch **/
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    width: 65px;
+    height: 33px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #90ddfc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before { /** bolinha do switch **/
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-image: url(https://media1.giphy.com/media/F0HOpzaUXInKxPLtr9/giphy.gif?cid=6c09b9528001031004e2acedbbcf26d11782798496ec3aaa&rid=giphy.gif&ct=s);
+    background-size: 26px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #1e0e4b;
+  }
+  
+  input:checked + .slider:before { /** bolinha no dark-mode **/
+    background-image: url(https://media.tenor.com/DTIl6DWhrZwAAAAj/moon-spacedoodles.gif);
+    transform: translateX(26px);
+  }
+  
+  .slider {
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    border-radius: 50%;
+  }
+
+  .dark-mode {
+    background-color: #349cf1;
+    color: red;
+  }
+
+  .dark-mode main {
+    background: red;
+  }
+
+
+
+/** codigo base do switch https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch **/
+
+
+
+
+
+
+
+
+
+
