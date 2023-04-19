@@ -24,19 +24,20 @@
             }
         }
 
-        const togglebtn = document.getElementsByClassName('slinder round');
+        const togglebtn = document.getElementsById("toggle-mode");
         const body = document.body
 
         togglebtn.addEventListener('click', function () {
-        body.classList.toggle('dark-mode');
+            body.classList.toggle('dark-mode');
         });
-
     </script>
 
     <label class="switch" >
-        <input type="checkbox">
+        <input id="toggle-mode" type="checkbox">
         <span class="slider"></span>
     </label>
+
+    <button id="toggle-mode">aaaaa</button> <!--Experimento-->
     
 
     <main>
