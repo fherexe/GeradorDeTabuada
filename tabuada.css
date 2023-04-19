@@ -131,12 +131,11 @@ table {
   }
 
   .dark-mode {
-    background-color: #349cf1;
-    color: red;
+    background-color: #18122B;
+    color: #fff;
   }
 
   .dark-mode main {
-    background: red;
   }
 
 

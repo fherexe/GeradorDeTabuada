@@ -23,22 +23,12 @@
                 tabela.innerHTML += linha 
             }
         }
-
-        const togglebtn = document.getElementsById("toggle-mode");
-        const body = document.body
-
-        togglebtn.addEventListener('click', function () {
-            body.classList.toggle('dark-mode');
-        });
     </script>
 
     <label class="switch" >
         <input id="toggle-mode" type="checkbox">
         <span class="slider"></span>
-    </label>
-
-    <button type="onclick" id="toggle-mode">Teste</button> <!--Experimento-->
-    
+    </label>    
 
     <main>
         <h1>Tabuada Dinâmica</h1>
@@ -56,8 +46,6 @@
         <table id="tabela-tabuada"></table>
     </section>
 
-    <footer>
-        
-    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
